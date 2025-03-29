@@ -1,14 +1,24 @@
 import java.lang.System;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
+import java.util.Random;
+import java.util.Scanner;
 //=============================================
 public class Ordenamientos{
 	//--------------------------------------
 	public static void main(String[] args){
 		int A[] = {10,4,3,4,5,6,14,25,8,90};
+		Random rand = new Random();
+		Scanner in = new Scanner(System.in);
+		System.out.println("cantidad de elementos");
+		int n = in.nextInt();
+		int M[] = new int[n];
+		for(int i=0;i<n;i++){
+			M[i]=rand.nextInt(1,100);
+		}
 		//burbujaSerial(A);
-		imprimir(A);
-		burbujaParalela(A);
+		imprimir(M);
+		burbujaParalela(M);
 	}
 	//---------------------------------------
 	public static void burbujaSerial(int []A){
