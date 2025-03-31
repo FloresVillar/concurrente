@@ -17,7 +17,7 @@ public class Ordenamientos{
 			M[i]=rand.nextInt(1,100);
 		}
 		//burbujaSerial(A);
-		imprimir(M);
+		imprimir("",M,"\n");
 		burbujaParalela(M);
 	}
 	//---------------------------------------
@@ -45,8 +45,9 @@ public class Ordenamientos{
 				arr[i]=new int[h];
 			}
 			System.arraycopy(A,i*h,arr[i],0,arr[i].length);
-			imprimir(arr[i]);
+			imprimir("",arr[i],"\t");
 		}
+		System.out.println();
 		for(int ii =0;ii<hilos.length;ii++){
 			final int i=ii;
 			hilos[i]= new Thread(new Runnable(){
@@ -65,19 +66,20 @@ public class Ordenamientos{
 				e.printStackTrace();
 			}
 		}
+		for(int i=0;i<arr.length;i++){
+			imprimir("",arr[i],"\t");
+		}
+		System.out.println();
 		//ensamblar de acuerdo a analisis previo
 		int[] M12 = ensamblar(arr[0],arr[1]);
-		imprimir(M12);
 		int[] M123 = ensamblar(M12,arr[2]);
-		imprimir(M123);
 		int[] M1234 = ensamblar(M123,arr[3]);
-		System.out.println("array ordenado ");
-		imprimir(M1234);
 	}
 	//---------------------------------------
 	public static int[] ensamblar(int[]A, int[]B){
 		int AB[] = new int[A.length + B.length];
-		imprimir(AB);
+		imprimir("",A,"\t");
+		imprimir("",B,"\t");
 		int posA = 0;
 		int posB = 0;
 		for(int i=0;i<AB.length;i++){
@@ -103,28 +105,21 @@ public class Ordenamientos{
 				}
 			}
 		}
+		imprimir("=>\t",AB,"\n");
 		return AB;
 	}
 	//----------------------------------------
-	public static void imprimir(int[]A){
+	public static void imprimir(String Before,int[]A,String After){
+		System.out.print(Before);
 		for(int i=0;i<A.length;i++){
-			System.out.print(A[i]+"\t");
+			if(i==A.length-1){
+				System.out.print(A[i]);
+			}else{
+				System.out.print(A[i]+"-");
+			}
 		}
-		System.out.println();
+		System.out.print(After);
 	}
 	//--------------------------------------
 }
 //==================================================
-class Burbuja{
-	Burbuja(int[]A){
-		for(int i=0;i<A.length;i++){
-			for(int j=0;j<A.length-i;j++){
-				if(A[i]>A[j]){
-					int aux = A[i];
-					A[i] = A[j];
-					A[j] = aux;
-				}
-			}
-		}
-	}
-}
