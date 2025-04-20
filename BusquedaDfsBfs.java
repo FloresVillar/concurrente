@@ -3,24 +3,6 @@ public class BusquedaDfsBfs {
 	//---------------------------------------------
 	public static void main(String[] args){
 		Grafo g=new Grafo();
-    		g.insertarVertice(0);
-    		g.insertarVertice(1);
-    		g.insertarVertice(2);
-    		g.insertarVertice(3);
-    		g.insertarVertice(4);
-    		g.insertarVertice(5);
-    		g.insertarVertice(6);
-    		g.insertarVertice(7);
-	    	g.insertarArista(0,6,53);
-    		g.insertarArista(0,1,32);
-   	 	g.insertarArista(0,2,29);
-    		g.insertarArista(0,5,60);
-    		g.insertarArista(4,3,34);
-    		g.insertarArista(5,3,18);
-public class BusquedaDfsBfs {
-        //---------------------------------------------
-        public static void main(String[] args){
-                grafo g;
                 g.insertarVertice(0);
                 g.insertarVertice(1);
                 g.insertarVertice(2);
@@ -29,25 +11,19 @@ public class BusquedaDfsBfs {
                 g.insertarVertice(5);
                 g.insertarVertice(6);
                 g.insertarVertice(7);
-    g.insertarArista(0,6,53);
-    g.insertarArista(0,1,32);
-    g.insertarArista(0,2,29);
-    g.insertarArista(0,5,60);
-    g.insertarArista(4,3,34);
-    g.insertarArista(5,3,18);
-    g.insertarArista(5,4,40);
-    g.insertarArista(6,4,51);
-    g.insertarArista(7,4,46);
-    g.insertarArista(7,0,31);
-    g.insertarArista(7,6,25);
-    g.insertarArista(7,1,21);
-    g.imprimirGrafo();    		g.insertarArista(5,4,40);
+    		g.insertarArista(0,6,53);
+    		g.insertarArista(0,1,32);
+    		g.insertarArista(0,2,29);
+    		g.insertarArista(0,5,60);
+    		g.insertarArista(4,3,34);
+    		g.insertarArista(5,3,18);
+    		g.insertarArista(5,4,40);
     		g.insertarArista(6,4,51);
     		g.insertarArista(7,4,46);
     		g.insertarArista(7,0,31);
     		g.insertarArista(7,6,25);
     		g.insertarArista(7,1,21);
-    		g.imprimirGrafo();
+    		g.imprimirGrafo(); 
 	}
 	//---------------------------------------------
 }
@@ -201,29 +177,4 @@ class Grafo{
 	}
 	//----------------------------------------
 }
-//======================================================
-public class BusquedaDfsBfs {
-        //---------------------------------------------
-        public static void main(String[] args){
-                grafo g;
-                g.insertarVertice(0);
-                g.insertarVertice(1);
-                g.insertarVertice(2);
-                g.insertarVertice(3);
-                g.insertarVertice(4);
-                g.insertarVertice(5);
-                g.insertarVertice(6);
-                g.insertarVertice(7);
-    g.insertarArista(0,6,53);
-    g.insertarArista(0,1,32);
-    g.insertarArista(0,2,29);
-    g.insertarArista(0,5,60);
-    g.insertarArista(4,3,34);
-    g.insertarArista(5,3,18);
-    g.insertarArista(5,4,40);
-    g.insertarArista(6,4,51);
-    g.insertarArista(7,4,46);
-    g.insertarArista(7,0,31);
-    g.insertarArista(7,6,25);
-    g.insertarArista(7,1,21);
-    g.imprimirGrafo();
+//====================================================

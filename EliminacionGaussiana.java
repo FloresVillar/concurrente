@@ -84,7 +84,6 @@ public class EliminacionGaussiana{
 			}
 			return X;
 		}
-	
 	}
 	//--------------------------------------------------------
 	public static void Imprimir(double[]V){

@@ -1,0 +1,27 @@
+algunos protocolos :
+	MQTT es un protocolo de comunicaicon ligera, si tiene un procesador es ligero
+
+ 	comunicacoon <-> 
+kafka 
+TLS
+XDR
+SSl
+MIME
+
+capa de sesion(donde se comunicacion)
+SNMP 
+capa de transporte de datos
+capa de red
+	IP
+	IPv
+capa enlace de datos, 
+	PPP: ARP, FDDI
+capa fisica:
+	DLS
+protocolo ysoftware comunes
+MQTT 
+	mosquito: 
+EMQX
+Apache kafka:
+puertos
+ 
